@@ -9,6 +9,7 @@ import {
 import {ka_session_storage} from "@kasimirjs/embed";
 import {JodaDescriptionManager, jodaSiteConfig, Jodasplit, Logger} from "@leuffen/jodastyle";
 import {SidebarWrapper, SidebarWrapperConfig} from "@kasimirjs/kit-bootstrap";
+import {joda_dev_config} from "../index";
 
 
 
@@ -42,6 +43,10 @@ class JodaDevSidebarElement extends KaCustomElement {
     static html;
     constructor() {
         super();
+        this.shadowRootConfig.mode = "closed";
+        this.shadowRootConfig.stylesheets = [
+           joda_dev_config.stylesheet,
+        ];
         this.wrap(new SidebarWrapper(config));
 
         let scope = this.init({

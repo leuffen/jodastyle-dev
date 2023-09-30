@@ -21,6 +21,7 @@ export class ExampleSwitcherElement  extends KaCustomElement {
     constructor() {
         super();
 
+
         console.log(JodaDescriptionManager.classes);
         let scope = this.init({
             desc: JodaDescriptionManager.classes,
