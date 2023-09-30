@@ -29,6 +29,8 @@ const tpl2 = `
     <quick-input ka.bind="$scope.siteConfig.disable_responsive" data-label="Disable Joda Responsive" data-name="test" data-type="switch"></quick-input>
     <quick-input ka.bind="$scope.siteConfig.debug_visualize" data-label="Joda Debug Visualize" data-name="test" data-type="switch"></quick-input>
     <quick-input ka.if="siteConfig.debug_visualize" ka.bind="$scope.siteConfig.debug_visualize_attribute" data-label="Add Attributes to Visualize" data-name="test" data-type="switch"></quick-input>
+    <hr>
+    <joda-example-switcher></joda-example-switcher>
 </div>
 `;
 

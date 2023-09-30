@@ -14,13 +14,12 @@ const tpl2 = `
 `;
 
 
-@customElement("switcher-element")
+@customElement("joda-example-switcher")
 @template(tpl2)
-class SubElement extends KaCustomElement {
+export class ExampleSwitcherElement  extends KaCustomElement {
     static html;
     constructor() {
         super();
-        this.wrap(new SidebarWrapper());
 
         console.log(JodaDescriptionManager.classes);
         let scope = this.init({
@@ -52,7 +51,7 @@ class SubElement extends KaCustomElement {
 
             var md = new MarkdownIt({
                 html: true  // Erlaubt HTML-Input.
-            });
+            }, null);
 
             md.use(markdownItAttrs);
 
