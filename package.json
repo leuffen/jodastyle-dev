@@ -36,9 +36,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "make.mjs": "tsc -d && mv dist/index.js dist/index.module.js",
+    "make.mjs": "tsc -d",
     "make.cjs": "tsc -m commonjs",
-    "build": "npm run make.mjs && npm run make.cjs",
+    "build": "npm run make.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
