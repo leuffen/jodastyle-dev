@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         'assets/dist/style': './docs/_scss/style.scss',
         'assets/dist/demo_theme': './docs/_scss/demo_theme.scss',
+        'assets/dist/dev': './docs/_scss/dev.scss',
 
         'assets/dist/index': './docs/_js/demo.ts',
 
