@@ -23,6 +23,7 @@ const config : SidebarWrapperConfig = {
 // language=HTML
 const tpl2 = `
 <div>
+    
     <h3 class="">JodaStyle Dev</h3>
     <quick-input ka.bind="$scope.siteConfig.disable_split" data-label="Disable Joda Split " data-name="test" data-type="switch"></quick-input>
     <quick-input ka.bind="$scope.siteConfig.disable_templates" data-label="Disable Joda Templates " data-name="test" data-type="switch"></quick-input>
