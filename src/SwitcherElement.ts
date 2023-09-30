@@ -39,7 +39,7 @@ class SubElement extends KaCustomElement {
             if (last === window.location.href) {
                 return;
             }
-            console.log(window.location.href, last)
+
             last = window.location.href;
             let url = new URL(window.location.href);
             let className = url.searchParams.get("className");
@@ -58,6 +58,7 @@ class SubElement extends KaCustomElement {
 
             let desc = JodaDescriptionManager.getDescription(className);
             if (desc === null) {
+                let newElement = document.createElement("joda-error");
                 newElement.innerHTML = "No description found";
                 daba.replaceWith(newElement);
                 return;
