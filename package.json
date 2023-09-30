@@ -1,0 +1,44 @@
+{
+  "name": "@leuffen/jodastyle-dev",
+  "version": "2.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "files": [
+    "/dist",
+    "*.scss",
+    "/scss"
+  ],
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "author": "",
+  "dependencies": {
+    "@kasimirjs/embed": "^1.1.6",
+    "@kasimirjs/kit-bootstrap": "^1.0.6",
+    "@leuffen/jodastyle": "^2.1.0"
+  },
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "sass": "^1.56.1",
+    "css-loader": "^6.7.1",
+    "esbuild-loader": "^2.20.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "scripts": {
+    "make.mjs": "tsc -d && mv dist/index.js dist/index.module.js",
+    "make.cjs": "tsc -m commonjs",
+    "build": "npm run make.mjs && npm run make.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
