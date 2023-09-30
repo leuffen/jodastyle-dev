@@ -14,12 +14,16 @@ command:
     jekyll serve -s /opt/docs -d /var/www/html --drafts --livereload --port 4000 --livereload-port 4100 --host 0.0.0.0
 
   dev:
-    - "killall webpack || echo 'No Proc'"
-    - "D:kick jekyll"
+    - killall jekyll ||  echo "no job"
+    - killall webpack ||  echo "no job"
+    - "D:setsid kick jekyll"
+    - "D:webpack build --watch"
 
   init-workspaces:
     - "mkdir -p workspaces"
-    - "git -C ./workspaces/ clone  git@github.com:dermatthes/leu-web-components.git"
+    - "git -C ./workspaces/ clone  git@github.com:leuffen/jodastyle.git"
+    - "git -C ./workspaces/ clone  git@github.com:kasimirjs/kasi-embed.git"
+    - "git -C ./workspaces/ clone  git@github.com:kasimirjs/kasimirjs-kit-bootstrap.git"
     - "npm install"
 
   update:

@@ -1,8 +1,8 @@
-@import "../../style_embed";
-@import "scss/debug";
+@import "../../index";
+
 
 .columnize {
-    --joda-group: @row;
+    --joda-group: "@row";
     --joda-class: col;
 }
 

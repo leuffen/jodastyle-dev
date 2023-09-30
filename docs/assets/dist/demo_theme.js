@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./docs/_scss/style.scss":
-/*!*******************************!*\
-  !*** ./docs/_scss/style.scss ***!
-  \*******************************/
+/***/ "./docs/_scss/demo_theme.scss":
+/*!************************************!*\
+  !*** ./docs/_scss/demo_theme.scss ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://@leuffen/jodastyle-dev/./docs/_scss/style.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://@leuffen/jodastyle-dev/./docs/_scss/demo_theme.scss?");
 
 /***/ })
 
@@ -43,7 +43,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./docs/_scss/style.scss"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./docs/_scss/demo_theme.scss"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
