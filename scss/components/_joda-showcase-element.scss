@@ -1,7 +1,7 @@
 
 
-
-joda-showcase-element {
+.joda-showcase-element {
+  width: 368px;
   --aspect-ratio: calc(16 / 9);
   &.big {
     --aspect-ratio: 0.5;

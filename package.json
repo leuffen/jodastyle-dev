@@ -1,6 +1,6 @@
 {
   "name": "@leuffen/jodastyle-dev",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -18,7 +18,7 @@
   ],
   "author": "",
   "dependencies": {
-    "@kasimirjs/embed": "^1.1.8",
+    "@kasimirjs/embed": "^1.1.10",
     "@kasimirjs/kit-bootstrap": "^1.0.7",
     "@leuffen/jodastyle": "^2.1.3",
     "markdown-it": "^13.0.2",

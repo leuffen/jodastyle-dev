@@ -43,6 +43,9 @@ export class ExampleSwitcherElement  extends KaCustomElement {
             last = window.location.href;
             let url = new URL(window.location.href);
             let className = url.searchParams.get("className");
+            if (className === null) {
+                return;
+            }
             scope.className = className;
             let daba = document.getElementsByTagName("joda-content")[0];
 
@@ -57,8 +60,8 @@ export class ExampleSwitcherElement  extends KaCustomElement {
             md.use(markdownItAttrs);
 
             let desc = JodaDescriptionManager.getDescription(className);
-            if (desc === null) {
-                let newElement = document.createElement("joda-error");
+            if (desc === undefined || desc === null) {
+                let newElement = document.createElement("div");
                 newElement.innerHTML = "No description found";
                 daba.replaceWith(newElement);
                 return;
