@@ -10,8 +10,8 @@ const tpl = `
                 <div class="card">
                     <div class="card-body p-1 m-1">
                         <div class="preview">
-                            <iframe ka.prop.src="'?className=' + i.className"></iframe>
-                            <div class="overlay"><a ka.prop.href="'?className=' + i.className">Show</a></div>
+                            <iframe ka.prop.src="'element.html?className=' + i.className"></iframe>
+                            <div class="overlay"><a ka.prop.href="'element.html?className=' + i.className">Show</a></div>
                         </div>
                     </div>
                 </div>
