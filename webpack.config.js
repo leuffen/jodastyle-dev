@@ -37,15 +37,7 @@ module.exports = {
             {
                 test: /\.(scss|css)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-
-                        loader: 'css-loader',
-                        options: {
-                            url: false // don't complain about url() in css
-                        }
-
-                    }, 'sass-loader'],
+                    "style-loader", "css-loader", 'sass-loader'],
                 include: path.resolve(__dirname, "")
             },
 
@@ -65,13 +57,6 @@ module.exports = {
         port: 4000,
     },
     plugins: [
-
-        new MiniCssExtractPlugin({
-          // Options similar to the same options in webpackOptions.output
-          // both options are optional
-          filename: "[name].css",
-          chunkFilename: "[id].css",
-        }),
 
 
     ],

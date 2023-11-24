@@ -2,9 +2,14 @@ import {JodaDescriptionManager} from "@leuffen/jodastyle";
 import {customElement, ka_sleep, KaCustomElement, template} from "@kasimirjs/embed";
 import {joda_dev_config} from "../index";
 
+
+
+
 // language=HTML
 const tpl = `
+
     <div class="joda-showcase-element" ka.classlist="classes">
+        <style></style>
         <div class="row " >
             <div class="col col-auto" ka.for="let i of desc ">
                 <div class="card">
@@ -28,10 +33,10 @@ class JodaShowcaseElement extends KaCustomElement {
     constructor() {
         super();
 
-        this.shadowRootConfig.mode = "closed";
+       /*this.shadowRootConfig.mode = "closed";
         this.shadowRootConfig.stylesheets = [
             joda_dev_config.stylesheet
-        ];
+        ]; */
         let scope = this.init({
             desc: JodaDescriptionManager.data,
             classes: [],

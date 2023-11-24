@@ -67,10 +67,18 @@ export class ExampleSwitcherElement  extends KaCustomElement {
                 return;
             }
 
-            document.body.classList.add(...desc.config.bodyClasses);
+
+            if (desc.config.bodyClasses !== undefined)
+                document.body.classList.add(...desc.config.bodyClasses);
+
 
 
             let content = desc.example ?? "No example found"
+            if (desc.exampleUri !== undefined) {
+                let response = await fetch(desc.exampleUri);
+                content = await response.text();
+            }
+
             if (desc.config.parseMarkdown) {
                 content = content.replace(/\n{:/gm, "{:");
                 content = md.render(content);

@@ -10,14 +10,15 @@
     "experimentalDecorators": true,
 
 
+
     "emitDecoratorMetadata": true,
     "moduleResolution": "node",
     "lib": [
       "es2021",
       "dom"
     ],
-
   },
+
   "include": [
     "src/**/*",
     "*.html"
