@@ -10,8 +10,8 @@ const tpl = `
 
     <div class="joda-showcase-element" ka.classlist="classes">
         <style></style>
-        <div class="row " >
-            <div class="col col-auto" ka.for="let i of desc ">
+        <div class="row " style="display: flex">
+            <div style="width: 350px;margin: 10px" ka.for="let i of desc ">
                 <div class="card">
                     <div class="card-body p-1 m-1">
                         <div class="preview">
@@ -27,7 +27,8 @@ const tpl = `
 
 
 
-@template(tpl)@customElement("joda-showcase-element")
+@template(tpl, {mode: "open", stylesheets: [joda_dev_config.stylesheet]})
+@customElement("joda-showcase-element")
 class JodaShowcaseElement extends KaCustomElement {
 
     constructor() {
