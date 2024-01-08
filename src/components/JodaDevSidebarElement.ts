@@ -38,15 +38,13 @@ const tpl2 = `
 
 
 @customElement("joda-dev-sidebar")
-@template(tpl2)
+@template(tpl2, {mode: "open", stylesheets: [joda_dev_config.stylesheet]})
 class JodaDevSidebarElement extends KaCustomElement {
     static html;
     constructor() {
         super();
-        this.shadowRootConfig.mode = "closed";
-        this.shadowRootConfig.stylesheets = [
-           joda_dev_config.stylesheet,
-        ];
+
+
         this.wrap(new SidebarWrapper(config));
 
         let scope = this.init({
